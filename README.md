@@ -30,4 +30,4 @@ Files Included
 Author
 Bilal Shafique – Data Analyst | Python | Power BI | Web Automation
 LinkedIn: https://www.linkedin.com/in/bilal-shafique
-bilalshafiq139@gmail.com
+Email:bilalshafiq139@gmail.com

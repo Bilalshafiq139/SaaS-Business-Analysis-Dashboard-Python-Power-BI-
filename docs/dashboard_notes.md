@@ -2,16 +2,18 @@
 
 The Power BI dashboard is stored at `dashboard/saas_growth_dashboard.pbix`.
 
-Recommended updates before publishing screenshots:
+## Dashboard Design & DAX Measures
 
-- Replace any ROI measure based on `profitMargin / askingPrice` with `profitToAskingPrice` or `paybackYears`.
-- Add KPI cards for total listings, median asking price, median profit margin, median payback period, and count of profitable listings.
-- Add a location visual that excludes locations with fewer than two listings or clearly flags small samples.
-- Add a scatter plot for annual revenue vs asking price, with growth segment as the legend.
-- Add a table of potential acquisition targets ranked by high profit-to-price ratio, positive profit, and reasonable revenue multiple.
-- Add a short methodology tooltip or text block explaining each KPI.
+The dashboard includes the following KPI and visual design recommendations:
 
-Suggested DAX measures:
+- Use `profitToAskingPrice` or `paybackYears` instead of ROI measures based on `profitMargin / askingPrice`.
+- Display KPI cards for total listings, median asking price, median profit margin, median payback period, and profitable listings.
+- Exclude or clearly identify locations with fewer than two listings when comparing countries.
+- Include a scatter plot showing annual revenue versus asking price with growth category as the legend.
+- Include a ranked acquisition opportunities table using positive profit, strong profit-to-price ratio, and reasonable revenue multiples.
+- Add concise methodology notes explaining each KPI.
+
+## Suggested DAX Measures
 
 ```DAX
 Median Asking Price = MEDIAN(saas_cleaned_data[askingPrice])

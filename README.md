@@ -1,6 +1,6 @@
 # SaaS Business Analysis Dashboard
 
-Portfolio project analyzing SaaS acquisition listings to identify valuation patterns, profitability signals, growth segments, and potential acquisition opportunities.
+This project analyzing SaaS acquisition listings to identify valuation patterns, profitability signals, growth segments, and potential acquisition opportunities.
 
 The project combines Python-based data cleaning and exploratory analysis with a Power BI dashboard. It is designed as a business analytics case study for SaaS investors, operators, and analysts.
 

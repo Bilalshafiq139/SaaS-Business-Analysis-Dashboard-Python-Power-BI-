@@ -1,6 +1,6 @@
 # SaaS Business Analysis Dashboard
 
-This project analyzing SaaS acquisition listings to identify valuation patterns, profitability signals, growth segments, and potential acquisition opportunities.
+This project analyzes SaaS acquisition listings to identify valuation patterns, profitability signals, growth segments, and potential acquisition opportunities.
 
 The project combines Python-based data cleaning and exploratory analysis with a Power BI dashboard. It is designed as a business analytics case study for SaaS investors, operators, and analysts.
 
@@ -14,11 +14,11 @@ The project combines Python-based data cleaning and exploratory analysis with a 
 
 ## Key Findings
 
-- Asking price has a stronger relationship with annual revenue than with annual profit in this dataset.
-- Growth rate has little correlation with revenue multiple, suggesting valuation is influenced by more than growth alone.
-- Medium-growth and high-growth listings have similar average profit margins, while low-growth listings trail behind.
-- Location-level rankings are highly sensitive to sample size; single-listing countries should not be treated as reliable market signals.
-- Several listings have negative annual profit, so payback period and profit-to-price metrics should be interpreted only for profitable companies.
+- Annual revenue has a stronger relationship with asking price than annual profit, with a correlation of 0.75 compared with 0.51.
+- Growth rate has almost no relationship with revenue multiple in this sample, with a correlation of -0.06.
+- High-growth listings show a median profit margin of 34%, compared with 10% for low-growth listings.
+- The dataset contains 7 listings with negative annual profit, so payback analysis should only be applied to profitable listings.
+- Country-level rankings are directional because several locations have very small sample sizes.
 
 ## Project Files
 
@@ -28,7 +28,7 @@ The project combines Python-based data cleaning and exploratory analysis with a 
 - `src/saas_analysis.py`: Reproducible Python cleaning and analysis pipeline.
 - `dashboard/saas_growth_dashboard.pbix`: Power BI dashboard file.
 - `docs/analysis_summary.md`: Auto-generated summary of key analysis outputs.
-- `docs/dashboard_notes.md`: Notes for Power BI measures and dashboard improvements.
+- `docs/dashboard_notes.md`: Power BI dashboard design notes and DAX measures.
 
 ## Metrics Used
 
@@ -68,7 +68,7 @@ The Power BI report is available at:
 dashboard/saas_growth_dashboard.pbix
 ```
 
-Recommended dashboard improvements and DAX measures are documented in:
+Dashboard design notes and DAX measures are documented in:
 
 ```text
 docs/dashboard_notes.md
@@ -99,5 +99,5 @@ docs/dashboard_notes.md
 ## Author
 
 Bilal Shafique  
-Data Analyst | Python | Power BI | Web Automation  
-LinkedIn: https://www.linkedin.com/in/bilal-shafique  
+Data Analyst | SQL | Python | Power BI | BI Dashboards  
+LinkedIn: https://www.linkedin.com/in/bilal-shafique
